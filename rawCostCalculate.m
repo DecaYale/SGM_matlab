@@ -9,7 +9,7 @@ for d=1:dispLevels
              if (j<=d)  
                  continue;
              end
-             rawCost(d,i,j) = abs(double( imgL(i,j) ) - imgR(i,j-d) );
+             rawCost(d,i,j) = abs( double( imgL(i,j) ) - double(imgR(i,j-d) )  );
         end
     end
 

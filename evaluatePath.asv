@@ -20,8 +20,6 @@ for d=1:DISP_RANGE
            end
            smooth_term = min([smooth_term;...
                             priorCostVec(d_p)+ max([P1,pp] )...%? P2/path_intensity_grad:P2])] ...
-                             ] ) ;%    [smooth_term;priorCostVec(d_p)+max([P1;max([P1,path_intensity_grad ? P2/path_intensity_grad:P2]) ]) );
-     
        end
    end
    curCostVec(d) = rawCostVec(d) + smooth_term;
